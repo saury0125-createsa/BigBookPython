@@ -12,7 +12,7 @@ def de_cipher(sentence,key):
         while j<=len(A_Z)-1 and is_find==False:
             if i==A_Z[j]:
                 is_find=True
-                if j+key>=0:
+                if j-key>=0:
                     final.append(A_Z[j-key])
                 else:
                     final.append(A_Z[j+key+26])
